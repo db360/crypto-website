@@ -16,16 +16,13 @@ import {
   NavMenu,
 } from "./NavbarElements";
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
   return (
     <>
       <Nav>
         <NavBarContainer>
-          <NavLogo to="/">
-            {" "}
-            <h1>HEY</h1>{" "}
-          </NavLogo>
-          <MobileIcon>
+          <NavLogo to="/">HEY</NavLogo>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
