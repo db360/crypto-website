@@ -45,12 +45,20 @@ export const VideoBg = styled.video`
 export const HeroContent = styled.div`
     z-index: 3;
     max-width: 1200px;
-    height: 40rem;
+    height: 10rem;
     position: absolute;
     padding: 8px 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (max-width: 768px) {
+        height: 20rem;
+    }
+
+    @media screen and (max-width: 480px) {
+        height: 25rem;
+    }
 `;
 
 export const HeroH1 = styled.h1`
